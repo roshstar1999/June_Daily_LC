@@ -22,4 +22,32 @@ class Solution {
             cout<<endl;
             
         }
+
+
+'''
+#optimised solution
+class Solution {
+  public:
+    void printTriangle(int n) {
+        int spaces=2*n-2;
+        for (int i=1;i<=2*n;i++){
+            int stars=i;
+            if (i>n) stars=2*n-i;
+            
+            //print stars
+            for (int a=1;a<=stars;a++) cout<<"*";
+            
+            //print spaces
+            for (int a=1;a<=spaces;a++) cout<<" ";
+            
+            
+            //print stars
+            for (int a=1;a<=stars;a++) cout<<"*";
+            
+            if (i>=n) spaces+=2;
+            else spaces-=2;
+            
+            cout<<endl;
+
+        '''
         
